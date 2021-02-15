@@ -1,3 +1,3 @@
 <?php
 
-$mysqli = new mysqli("localhost", "root", "", "db_evote");
+$koneksi = new mysqli("localhost", "root", "", "db_evote");

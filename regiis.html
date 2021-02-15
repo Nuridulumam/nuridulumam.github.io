@@ -15,7 +15,7 @@
           <img src="https://cdn.iconscout.com/icon/free/png-512/election-box-2-1168303.png" width="30" height="30" class="d-inline-block align-top" alt="brand-logo">
           Kahim HIMATIF 2021
         </a>
-        <button class="btn btn-primary btn-outline-white" type="button" onclick="window.location.href='login.html';">Log In</button>
+        <button class="btn btn-primary btn-outline-white" type="button" onclick="window.location.href='login.php';">Log In</button>
       </div>
       </nav>
 
@@ -27,38 +27,38 @@
               <hr>
               <h4 class="h4 text-center mb-3">Registrasi Calon Pemilih</h4>
               <hr class="mb-5">
-              <form method="POST" action="regis.php">
+              <form method="post" action="regis.php">
                 <div class="form-row">
                   <div class="form-group col-md-6">
-                    <label for="inputfname">Nama Depan</label>
-                    <input type="text" class="form-control" id="inputfname" required>
-                    <small id="emailexp" class="form-text text-muted">Nuridul</small>
+                    <label for="inputNama">Nama Lengkap</label>
+                    <input type="text" name="inputNama" class="form-control" id="inputNama" required>
+                    <small id="emailexp" class="form-text text-muted">cth: Nuridul Umam</small>
                   </div>
                   <div class="form-group col-md-6">
-                    <label for="inputlname">Nama Belakang</label>
-                    <input type="text" class="form-control" id="inputlname" required>
-                    <small id="emailexp" class="form-text text-muted">Umam</small>
+                    <label for="inputUsername">Username</label>
+                    <input type="text" name="inputUsername" class="form-control" id="inputUsername" required>
+                    <small id="emailexp" class="form-text text-muted">cth: @nuridulumam71</small>
                   </div>
                 </div>
                 <div class="form-group">
                   <label for="inputEmail">Email UB</label>
-                  <input type="email" class="form-control" id="inputEmail" required>
+                  <input type="email" name="inputEmail" class="form-control" id="inputEmail" required>
                   <small id="emailexp" class="form-text text-muted">example@student.ub.ac.id</small>
                 </div>
                 <div class="form-group">
                   <label for="inputPassword">Password</label>
-                  <input type="password" class="form-control" id="inputPassword" required>
+                  <input type="password" name="inputPassword" class="form-control" id="inputPassword" required>
                   <small id="helpPassword" class="form-text text-muted">Your password must be 8-20 characters long, contain letters and numbers.</small>
                 </div>
                 <div class="form-row">
                   <div class="form-group col-md-6">
                     <label for="inputNIM">NIM</label>
-                    <input type="number" class="form-control" id="inputNIM" required>
+                    <input type="number" class="form-control" id="inputNIM" name="inputNIM" min="193140710000000" max="193140719999999" required>
                     <small id="emailexp" class="form-text text-muted">19314071****</small>
                   </div>
                   <div class="form-group col-md-4">
                     <label for="inputKelas">Kelas</label>
-                    <select id="inputKelas" class="form-control" required>
+                    <select id="inputKelas" name="inputKelas" class="form-control" required>
                       <option selected disabled>Choose...</option>
                       <option>TI-A</option>
                       <option>TI-B</option>
@@ -67,7 +67,7 @@
                   </div>
                   <div class="form-group col-md-2">
                     <label for="inputAbsen">Absen</label>
-                    <input type="text" class="form-control" id="inputAbsen" required>
+                    <input type="text" name="inputAbsen" class="form-control" id="inputAbsen" required>
                   </div>
                 </div>
                 <button type="submit" class="btn btn-primary mt-2">Register</button>

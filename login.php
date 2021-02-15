@@ -25,16 +25,33 @@
               <div class="col-md-5">
                 <div class="login-id mt-5 bg-light p-5">
                     <h4 class="h4 text-center mb-5">Login e-Vote HIMATIF</h4>
-                    <form>
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                            <small id="emailHelp" class="form-text text-muted">example: nmae@student.ub.ac.id</small>
+                    <form method="POST" action="cek_login.php">
+                      <div class="form-group">
+                        <label for="inputUsername">Username</label>
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <div class="input-group-text">@</div>
+                          </div>
+                          <input type="text" class="form-control" id="inputUsername" name="inputUsername">
                         </div>
+                      </div>
+                      <div class="form-group">
+                          <label for="inputEmail">Email address</label>
+                          <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" name="inputEmail">
+                          <small id="emailHelp" class="form-text text-muted">example: example@student.ub.ac.id</small>
+                      </div>
                         <div class="form-group">
-                            <label for="exampleInputPassword1">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1">
+                            <label for="inputPassword">Password</label>
+                            <input type="password" class="form-control" id="inputPassword" name="inputPassword">
+                      <?php
+                      if (isset($_GET['pesan'])) {
+                        if ($_GET['pesan'] == "gagal") {
+                          echo "<small class="."form-text text-muted"."> Maaf Username anda salah!</small>";
+                        } 
+                      }
+                      ?>
                         </div>
+
                       <button type="submit" class="btn btn-primary mb-1" >Log in</button> <br>
                       <small id="no-account" class="form=text text-muted">Have no account? <a href="regiis.html">Register here</a></small>
                     </form>
