@@ -70,9 +70,6 @@
 }
 
 /* profile landingpage */
-#profile {
- height: 675px;
-}
 .clip-video {
  margin-top: 50px;
  padding: 40px 20px 40px 20px;
@@ -83,19 +80,12 @@
 }
 
 /* rangkaian acara */
-#rangkaian-acara {
- height: 485px;
-}
 #list-rangkaian {
  margin-top: 100px;
- height: 160px;
 }
 
 /* benefits */
-#benefit {
- height: 685px;
- margin-top: 80px;
-}
+
 #list-benefit {
  margin-top: 40px;
 }
@@ -116,14 +106,24 @@
  background: linear-gradient(180deg, #023e8a 0%, rgba(255, 255, 255, 0) 197.16%);
  border-radius: 30px;
  color: #fff;
- height: 476px;
- margin-top: 100px;
+ padding: 50px 0 100px 0;
+}
+.conhead {
+ font-size: 24;
+ font-weight: 500;
 }
 
 /* footer */
 #footer {
  margin-top: 100px;
- height: 245px;
+}
+.brand-logo p {
+ font-size: 14px;
+ font-weight: 200;
+ letter-spacing: 0.2px;
+}
+.footer-link a {
+ padding-left: 5px;
 }
 /* DESKTOP */
 @media (min-width: 992px) {
@@ -151,50 +151,14 @@
   height: 538px;
  }
  .jumbotron .display-4 {
-  font-size: 42px;
+  font-size: 48px;
+  font-weight: 500;
  }
- .info-panel {
-  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
-  border-radius: 12px;
-  margin-top: -100px;
-  background-color: white;
-  padding: 40px;
+ .conhead {
+  font-size: 48px;
+  font-weight: 500;
  }
- .info-panel img {
-  width: 80px;
-  height: 80px;
-  margin-right: 20px;
-  margin-bottom: 10px;
- }
- .info-panel h4 {
-  font-size: 16px;
-  text-transform: uppercase;
-  font-weight: bold;
-  margin-top: 15px;
- }
- .info-panel p {
-  font-size: 14px;
-  color: #6b6b6b;
-  margin-top: -5px;
-  font-weight: 200;
- }
- .inform {
-  margin-top: 120px;
-  text-align: left;
-  margin-right: 40px;
- }
- .list-benefit {
-  padding-top: 40px;
-  padding-left: 70px;
- }
- .list-benefit h6 {
-  padding-top: 25px;
+ .footer-link a {
   padding-left: 20px;
- }
- .workingspace {
-  text-align: left;
- }
- .quotes h5 {
-  font-size: 24px;
  }
 }
