@@ -1,6 +1,6 @@
 /* global */
 * {
- font-family: 'Mulish', sans-serif;
+ font-family: 'Montserrat', sans-serif;
 }
 /* navbar */
 .navbar {
@@ -14,7 +14,7 @@
 }
 /* utility */
 .tombol {
- background-color: #3c64b1;
+ background-color: #ffb703;
  text-transform: capitalize;
  border-radius: 5px;
  font-weight: 500;
@@ -70,7 +70,7 @@
 }
 
 /* profile landingpage */
-.clip-video {
+.profile-ph {
  margin-top: 50px;
  padding: 40px 20px 40px 20px;
 }
@@ -79,20 +79,61 @@
  padding: 40px 20px 40px 20px;
 }
 
+/* data-statistik */
+.bg-statistik {
+ text-align: center;
+ position: relative;
+ color: #ffffff;
+}
+.bg-statistik .container {
+ z-index: 1;
+ position: relative;
+}
+.bg-statistik::before {
+ content: '';
+ display: block;
+ width: 100%;
+ height: 100%;
+ position: absolute;
+ bottom: 0;
+ background-image: linear-gradient(180deg, #023e8a 0%, rgba(144, 224, 239, 0) 236.7%);
+}
+.list-data-statistik {
+ font-weight: 700;
+}
+.list-data-statistik p {
+ font-size: 18px;
+}
+
 /* rangkaian acara */
 #list-rangkaian {
  margin-top: 100px;
 }
 
 /* benefits */
-
+.bg-benefit {
+ text-align: center;
+ position: relative;
+ color: #ffffff;
+}
+.bg-benefit::before {
+ content: '';
+ display: block;
+ width: 100%;
+ height: 100%;
+ position: absolute;
+ bottom: 0;
+ background-image: linear-gradient(180deg, #023e8a 0%, rgba(0, 0, 0, 0) 207%);
+}
 #list-benefit {
- margin-top: 40px;
+ margin-top: 100px;
+ text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9);
 }
 
 /* blog */
-#list-blog {
- margin-top: 67px;
+.blog .kategori {
+ margin-top: 40px;
+ width: 20rem;
 }
 
 /* seminar */
@@ -160,5 +201,18 @@
  }
  .footer-link a {
   padding-left: 20px;
+ }
+ #list-rangkaian .col-md-3 {
+  margin-left: 50px;
+ }
+ .blog .kategori {
+  margin-top: 0px;
+  width: 15rem;
+ }
+ .pengunjung .counter {
+  margin-top: 40px;
+ }
+ .registrasi .counter {
+  margin-top: 40px;
  }
 }
